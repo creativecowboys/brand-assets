@@ -8,7 +8,7 @@
   .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cc-orange);}
   h1{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.5px;line-height:.92;font-size:clamp(34px,6vw,56px);margin:10px 0 6px;}
   .lede{color:var(--mut);font-size:15px;line-height:1.55;max-width:560px;}
-  .stage{background:var(--cc-cream);border:2px solid var(--cc-ink);border-radius:10px;box-shadow:6px 6px 0 0 var(--cc-orange);padding:30px;margin:26px 0 14px;}
+  .stage{background:#161618;border:1px dashed var(--cc-ink-line);border-radius:12px;padding:44px;margin:26px 0 14px;}
   .bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:22px;}
   button{font-family:var(--font-mono);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;padding:12px 20px;border:2px solid var(--cc-ink);border-radius:10px;background:var(--cc-orange);color:var(--cc-ink);cursor:pointer;box-shadow:4px 4px 0 0 var(--cc-ink);}
   button:hover{background:var(--cc-orange-hi);}
@@ -21,10 +21,11 @@
 <div class="wrap">
   <div class="eyebrow">★ Creative Cowboys · Email Signature</div>
   <h1>Dave's Signature.</h1>
-  <p class="lede">Hit <b style="color:var(--cc-orange)">Copy Signature</b> below, then paste it into your email signature settings. Gmail: Settings → See all settings → General → Signature.</p>
+  <p class="lede">Hit <b style="color:var(--cc-orange)">Copy Signature</b> below, then paste it into your email signature settings. Gmail: Settings → See all settings → General → Signature. The frame copies too.</p>
   <div class="bar"><button id="copyBtn">Copy Signature</button></div>
   <div class="stage">
-    <table id="sig" role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#0D0D0F;">
+    <div id="sig" style="display:inline-block;background:#F3ECDD;border:2px solid #0D0D0F;border-radius:10px;box-shadow:6px 6px 0 0 #F05828;padding:26px 30px;font-family:Arial,Helvetica,sans-serif;color:#0D0D0F;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#0D0D0F;">
       <tr>
         <td style="vertical-align:middle;padding-right:22px;border-right:3px solid #F05828;">
           <img src="https://creativecowboys.github.io/brand-assets/cc-logo-stacked-signature.png" alt="Creative Cowboys" width="170" style="display:block;width:170px;height:auto;">
@@ -51,6 +52,7 @@
         </td>
       </tr>
     </table>
+    </div>
   </div>
   <div class="steps">
     <div><b>1.</b> Click <b>Copy Signature</b>.</div>
